@@ -87,7 +87,7 @@ export default class MaterialTabs extends React.Component<Props, State> {
   componentDidUpdate(prevProps: Props) {
     if (this.props.items.length !== prevProps.items.length) {
       this.bar &&
-        this.bar.measure((_, _, width) => {
+        this.bar.measure((_, __, width) => {
           width && this.getTabWidth(width);
         });
     }
